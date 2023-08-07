@@ -10,6 +10,7 @@
 제네릭을 사용할 때는 타입 변수를 선언하고, 이 타입 변수를 함수나 클래스의 매개변수, 반환 타입, 프로퍼티 등에 사용합니다. 제네릭 타입 변수는 일반적으로 대문자 알파벳 한 글자로 표현되며, 관례적으로 T, U, K 등이 사용된다.
 
 // 함수에서 제네릭 사용
+
 function printArray<T>(arr: T[]): void {
     arr.forEach(item => console.log(item));
 }
@@ -18,6 +19,7 @@ printArray([1, 2, 3]); // 출력: 1 2 3
 printArray(['a', 'b', 'c']); // 출력: a b c
 
 // 클래스에서 제네릭 사용
+
 class Box<T> {
     private value: T;
 
